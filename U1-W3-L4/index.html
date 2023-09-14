@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EpiCalendar</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="month-name"></h1>
+      <div class="calendar" id="calendar"></div>
+      <div class="add-meeting">
+        <h2>Add Meeting</h2>
+        <div class="meeting-input">
+          <label for="meeting-day">Meeting Day:</label>
+          <p id="meeting-day">Click on a day</p>
+        </div>
+        <div class="meeting-input">
+          <label for="meeting-time">Meeting Time:</label>
+          <input type="time" id="meeting-time" />
+        </div>
+        <div class="meeting-input">
+          <label for="meeting-name">Meeting Name:</label>
+          <input type="text" id="meeting-name" />
+        </div>
+        <div class="meeting-input">
+          <label for="meeting-save">Add</label>
+          <button id="meeting-save" onclick="saveMeeting()">
+            Save Meeting
+          </button>
+        </div>
+      </div>
+      <div class="appointments-show">
+        <div class="appointments" id="appointments"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

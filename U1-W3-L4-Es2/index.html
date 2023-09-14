@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tombola</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="start-btn-container">
+      <button id="start-btn" onclick="startGame(this)">Start BINGO!</button>
+    </div>
+    <div class="container">
+      <h1>Tombola</h1>
+
+      <div id="board"></div>
+
+      <button id="extract">Estrai numero</button>
+
+      <div id="cards"></div>
+
+      <label for="numCards">Numero di tabelle:</label>
+      <input type="number" id="numCards" value="1" min="1" max="8" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
